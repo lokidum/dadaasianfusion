@@ -1,0 +1,500 @@
+<!DOCTYPE html>
+<html lang="en-AU">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Dada — modern Asian-inspired dining and artisanal house-made treats in Phillip, Canberra. Reservations and online ordering." />
+  <meta name="theme-color" content="#ebe9e6" />
+  <title>Dada · Modern Asian-Fusion Dining · Canberra</title>
+
+  <link rel="icon" href="assets/img/logo.webp" type="image/webp" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght,SOFT,WONK@0,9..144,400..700,30..100,0..1;1,9..144,400..700,30..100,0..1&family=PT+Sans:ital,wght@0,400;0,700;1,400;1,700&display=swap" rel="stylesheet" />
+  <link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@24,300,0,0&display=swap" rel="stylesheet" />
+
+  <link rel="stylesheet" href="assets/css/tokens.css" />
+  <link rel="stylesheet" href="assets/css/base.css" />
+  <link rel="stylesheet" href="assets/css/components.css" />
+  <link rel="stylesheet" href="assets/css/animations.css" />
+  <link rel="stylesheet" href="assets/css/preloader.css" />
+
+  <style>
+    /* Inline preloader-critical CSS to prevent any FOUC */
+    #preloader{position:fixed;inset:0;z-index:9999;background:#ebe9e6;display:flex;align-items:center;justify-content:center}
+    body{opacity:1}
+    .material-symbols-outlined{font-family:'Material Symbols Outlined';font-weight:normal;font-style:normal;line-height:1;letter-spacing:normal;text-transform:none;display:inline-block;white-space:nowrap;word-wrap:normal;direction:ltr;-webkit-font-feature-settings:'liga';-webkit-font-smoothing:antialiased}
+  </style>
+</head>
+<body>
+
+  <!-- ============ PRELOADER ============ -->
+  <div id="preloader" role="status" aria-live="polite" aria-label="Loading">
+    <div class="preloader__inner">
+      <span class="preloader__logo">dada</span>
+      <span class="preloader__line" aria-hidden="true"></span>
+      <span class="preloader__tagline">Modern Asian-fusion · Canberra</span>
+    </div>
+  </div>
+
+  <a class="skip-link" href="#home">Skip to content</a>
+
+  <!-- ============ HEADER ============ -->
+  <header class="site-header" id="top">
+    <div class="container nav">
+      <a class="brand" href="#home" aria-label="Dada — home">dada</a>
+      <nav aria-label="Primary">
+        <ul class="nav-links">
+          <li><a href="#home">Home</a></li>
+          <li><a href="#menu">Menu</a></li>
+          <li><a href="#book">Reservations</a></li>
+          <li><a href="#order">Order Online</a></li>
+          <li><a href="#about">About</a></li>
+          <li><a href="#contact">Contact</a></li>
+        </ul>
+      </nav>
+      <div class="nav-actions">
+        <button class="cart-btn" aria-label="Open cart, 0 items" aria-controls="cart-drawer" aria-expanded="false">
+          <span class="material-symbols-outlined" aria-hidden="true">shopping_bag</span>
+          <span class="cart-badge" aria-hidden="true">0</span>
+        </button>
+        <button class="menu-toggle" aria-label="Open menu" aria-controls="mobile-menu" aria-expanded="false">
+          <span class="material-symbols-outlined" aria-hidden="true">menu</span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- ============ MOBILE DRAWER ============ -->
+  <div class="mobile-menu" id="mobile-menu" aria-hidden="true">
+    <div class="mobile-menu__backdrop"></div>
+    <aside class="mobile-menu__panel" role="dialog" aria-modal="true" aria-label="Site menu">
+      <div class="mobile-menu__header">
+        <span class="brand" style="color:var(--color-text)">dada</span>
+        <button class="mobile-menu__close" aria-label="Close menu">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <ul class="mobile-menu__links">
+        <li><a href="#home">Home</a></li>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#book">Reservations</a></li>
+        <li><a href="#order">Order Online</a></li>
+        <li><a href="#about">About</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <div class="mobile-menu__contact">
+        <p>G4/12 Furzer Street<br>Phillip ACT 2606</p>
+        <p style="margin-top:8px"><a href="tel:+61493514593" class="link-underline">0493 514 593</a></p>
+      </div>
+    </aside>
+  </div>
+
+  <main id="main">
+    <span class="nav-sentinel" aria-hidden="true"></span>
+
+    <!-- ============ HERO ============ -->
+    <section class="hero" id="home" aria-labelledby="hero-title">
+      <div class="hero__media" data-parallax="0.3">
+        <img
+          data-asset-role="hero"
+          data-img-key="hero"
+          src="https://lh3.googleusercontent.com/aida-public/AB6AXuDuLpFlmqQ6mUkF0LmZQjUtgEcKaC8DVI4chS8Aiwjk_Lo-vKEH2KILcvFwLPBoBNYWVkz_5HRzZkRzWHN0jLDLR7Vn7VAAvz7q4kqrhi3T2RsExqq2EnHRfQ4d31NwxQk3kfFRA-EzgMG8sM_R5W5JZb-rJYpKlsmccmpb_l7yZ3uBOzKcfvfwy36MOTwUSHkOENlrYG0OdRtwBRqbZ8aGmM-eXcZ-2RB4mvkrJ29hMrjJqMP7-13UkUKnRYR0wYqq-pPgrtRiJ_PB"
+          alt="A bowl of Dada's signature dish being plated, dramatic lighting, chili sauce being poured over Korean fried chicken"
+          loading="eager" fetchpriority="high" decoding="async">
+      </div>
+      <div class="hero__overlay" aria-hidden="true"></div>
+      <div class="container hero__inner">
+        <span class="eyebrow hero__eyebrow" data-reveal="fade">Phillip · Canberra</span>
+        <h1 id="hero-title" class="hero__title" data-reveal="up">Modern Asian-inspired dining and <em>artisanal</em> house-made treats.</h1>
+        <p class="hero__sub" data-reveal="up">From slow-stocked broths to ceremonial-grade matcha, every plate at Dada is built around craftsmanship, sourcing, and quiet care.</p>
+        <div class="hero__ctas" data-reveal="up">
+          <a class="btn-pill" href="#book">Book a Table</a>
+          <a class="btn-pill btn-pill--ghost" href="#order">Order Online</a>
+        </div>
+      </div>
+      <span class="hero__scroll-cue" aria-hidden="true">Scroll</span>
+    </section>
+
+    <!-- ============ INTRO ============ -->
+    <section class="intro section" id="intro" aria-label="Introduction">
+      <div class="container">
+        <p class="intro__body" data-reveal="up">
+          A small, considered kitchen in Phillip — where Korean fried chicken meets <em>slow-fermented kimchi</em>, where dessert is a discipline of its own, and where dietary requirements are met with intent, not afterthought.
+        </p>
+      </div>
+    </section>
+
+    <!-- ============ HIGHLIGHTS ============ -->
+    <section class="section" id="highlights" aria-labelledby="highlights-title">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">Signature Plates</span>
+          <h2 id="highlights-title">A few <em>dishes</em> we'd recommend you try.</h2>
+          <p>Three of the kitchen's favourites — featured on every visit, available for dine-in. Full menu below.</p>
+        </header>
+        <div class="highlights" data-reveal-stagger>
+          <a class="highlight" href="#menu" data-reveal-child data-reveal="up">
+            <img data-asset-role="highlight-wombok" data-img-key="highlightWombok"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC3X-RWmnPLqJYqQqd9HxLR9-aE5BfP6KU2PIkfHFvUF5fkjjLkr7w-djbAyP5GBpMjV5LH0e4hSEDKFv4FrsTHEY3kQVtxSpEx0DJBzS-EmwAxgFXJZRwsK1Vhd4Xq79xWqM4owMlBfP_TgBpwUtZkbjsLB9CHnGZ3CL2GP_yA8eDgWzkQ6JhB4VVCsCXOqdYxGSAjMrlOZbZw2pYBpHQ9Bdh4ZkVz_3ZTSCKDOZcfg6JEK2BGiAFcc7QmqXvgYDvyt8x1MQOC5_o"
+              alt="Wombok pancake with scallion and ginger soy dipping sauce" loading="lazy" decoding="async">
+            <div class="highlight__body">
+              <span class="eyebrow" style="color:rgba(255,255,255,0.85)">Small Plate</span>
+              <h3 class="highlight__name">Wombok Pancake</h3>
+              <p class="highlight__desc">Crispy savoy cabbage, scallion, ginger-soy.</p>
+            </div>
+          </a>
+          <a class="highlight" href="#menu" data-reveal-child data-reveal="up">
+            <img data-asset-role="highlight-korean-fc" data-img-key="highlightKFC"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuDtBN_g9PHB-x5HBkS9NJrXg5SmYBgs8q-2nCqgvLY1WkHJYbgKqIQF_h0pbdtuMOhxn5sNlEhGzgUxOyKR3BCrCC72sgEOgVqo6m9C2v2qwjVQ8qE9p_8DLF66Lyrp1zL3VtkCKj9ezgM5OdkqCkSAdJOIODn-x_5T2STo8E9TGAo2u9c70JdiVrr97FAtCfWoOZxbqAQy9hLrFw9ZJOTtNz3uHrXAg3WeQpYsR0RDhAhFqgxAtjvK6XLOZ1V14ZNc5R7AbiC-LWAU"
+              alt="Korean fried chicken being glazed in chili sauce" loading="lazy" decoding="async">
+            <div class="highlight__body">
+              <span class="eyebrow" style="color:rgba(255,255,255,0.85)">Main</span>
+              <h3 class="highlight__name">Korean Fried Chicken</h3>
+              <p class="highlight__desc">Double-fried, signature chili glaze, peanuts.</p>
+            </div>
+          </a>
+          <a class="highlight" href="#menu" data-reveal-child data-reveal="up">
+            <img data-asset-role="highlight-matcha" data-img-key="highlightMatcha"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuB55BBJgzIVMfvKpMBghd4PVDXdMfb4SUSAYDtVnP4n7Tf8t6qBQX4PqHGtZ9MZHWXFKLHN2HRcHrhO-q6q-zg-_3Jdpr3xfMQ6XcGZGqMSAmrPq9_xQXEtBfFwGEdoYJ2NJ_LhvFKvFy5L5yfdGCqYzwTbf99nGSV3a0XEh1JlqLfRcLrnZTwBFRkX6yfsxh1H9XxIIZ_z-vEgZGRGfRzdQp9Rg-MWzNXxbVKfQs5L0BiPHsR0_PyZKsKbXMIuhpqcUk7Z2qrFOTYx"
+              alt="A slice of matcha basque cheesecake with a burnt top" loading="lazy" decoding="async">
+            <div class="highlight__body">
+              <span class="eyebrow" style="color:rgba(255,255,255,0.85)">Dessert</span>
+              <h3 class="highlight__name">Matcha Basque Cheesecake</h3>
+              <p class="highlight__desc">Burnt-top Basque, ceremonial-grade matcha.</p>
+            </div>
+          </a>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ MENU ============ -->
+    <section class="section" id="menu" aria-labelledby="menu-title" style="background:var(--color-surface-2);">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">The Menu</span>
+          <h2 id="menu-title">A short, <em>seasonal</em> menu — built around what's at its best.</h2>
+          <p>Dietary tags shown on every plate. Speak with the kitchen for swaps — we'll always make it work.</p>
+        </header>
+
+        <div class="menu-wrap">
+          <div>
+            <div class="menu-tablist" id="menu-tablist" role="tablist" aria-label="Menu categories"></div>
+            <div class="menu-items" id="menu-panel" role="tabpanel" tabindex="0"></div>
+
+            <div style="margin-top:32px;display:flex;gap:8px;flex-wrap:wrap;font-size:0.8125rem;color:var(--color-muted);" data-reveal="fade">
+              <span><strong style="color:var(--color-accent)">V</strong> Vegetarian</span>
+              <span style="margin-left:16px"><strong style="color:var(--color-accent)">VG</strong> Vegan</span>
+              <span style="margin-left:16px"><strong style="color:var(--color-accent)">GF</strong> Gluten-Free</span>
+              <span style="margin-left:16px"><strong style="color:var(--color-accent)">DF</strong> Dairy-Free</span>
+              <span style="margin-left:16px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--color-accent);vertical-align:middle"></span> Signature</span>
+            </div>
+          </div>
+
+          <aside class="menu-aside" aria-label="Featured editorial image">
+            <div class="menu-aside__media media-zoom" data-reveal="scale">
+              <img id="menu-aside-img" data-asset-role="menu-editorial"
+                src="https://lh3.googleusercontent.com/aida-public/AB6AXuDKVcJMaSc5d_J-2c9ZUu7T9TqRwAaUkOnQzPxRn9bvr1ig8MzZ3WfqKLN-MFcjsdr8WGcXuTArD-FhX9eXuVsTRPpgVCSXJuKAhTcQ-rDfXdtBh8tMtO1AQUaHfBlA1zRYIcWxRxhbFEqMVwz8sw5BzwYzMlAaSi6dxFmiB8KGyBSPVU8C3QGu7uYFTAyOKjBOtRLeNz_eMbpNi8gC-Vw9hRlqWqK28pUUmKPPMUbA2GnGwLBoSqWBLZxCnvUk4QBQYHmKwUFzKZAJ"
+                alt="" loading="lazy" decoding="async">
+            </div>
+            <p class="menu-aside__caption" id="menu-aside-caption" data-reveal="fade">Small Plates — handheld bites, hand-folded, hand-finished.</p>
+          </aside>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ BOOKING ============ -->
+    <section class="section" id="book" aria-labelledby="book-title">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">Reservations</span>
+          <h2 id="book-title">Book a <em>table</em>.</h2>
+          <p>For parties of seven or more, please ring the kitchen directly — we'll put something special together.</p>
+        </header>
+
+        <div class="booking-grid">
+          <div data-reveal="up">
+            <div class="booking-card">
+              <form id="booking-form" novalidate>
+                <div class="field-row">
+                  <div class="field" data-field="name">
+                    <label for="book-name">Full name</label>
+                    <input id="book-name" name="name" type="text" autocomplete="name" required aria-required="true">
+                    <span class="field-error" role="alert"></span>
+                  </div>
+                  <div class="field" data-field="email">
+                    <label for="book-email">Email</label>
+                    <input id="book-email" name="email" type="email" autocomplete="email" required aria-required="true">
+                    <span class="field-error" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field" data-field="phone">
+                    <label for="book-phone">Phone</label>
+                    <input id="book-phone" name="phone" type="tel" autocomplete="tel" required aria-required="true">
+                    <span class="field-error" role="alert"></span>
+                  </div>
+                  <div class="field" data-field="partySize">
+                    <label for="book-party">Party size</label>
+                    <select id="book-party" name="partySize" required aria-required="true">
+                      <option value="" disabled selected>Choose</option>
+                      <option value="1">1 guest</option>
+                      <option value="2">2 guests</option>
+                      <option value="3">3 guests</option>
+                      <option value="4">4 guests</option>
+                      <option value="5">5 guests</option>
+                      <option value="6">6 guests</option>
+                      <option value="7+">7 or more (call us)</option>
+                    </select>
+                    <span class="field-error" role="alert"></span>
+                  </div>
+                </div>
+
+                <div class="field-row">
+                  <div class="field" data-field="date">
+                    <label for="book-date">Date</label>
+                    <input id="book-date" name="date" type="date" required aria-required="true">
+                    <span class="field-error" role="alert"></span>
+                  </div>
+                  <div class="field" data-field="occasion">
+                    <label for="book-occasion">Occasion (optional)</label>
+                    <select id="book-occasion" name="occasion">
+                      <option value="">—</option>
+                      <option value="birthday">Birthday</option>
+                      <option value="anniversary">Anniversary</option>
+                      <option value="business">Business</option>
+                      <option value="other">Other</option>
+                    </select>
+                  </div>
+                </div>
+
+                <div class="field" data-field="time">
+                  <label>Time</label>
+                  <div class="time-pills" id="time-pills" role="radiogroup" aria-label="Booking time"></div>
+                  <span class="field-error" role="alert"></span>
+                </div>
+
+                <div class="field" data-field="dietary">
+                  <label for="book-dietary">Dietary requirements (optional)</label>
+                  <textarea id="book-dietary" name="dietary" maxlength="500" placeholder="Allergies, intolerances, anything we should know."></textarea>
+                </div>
+
+                <div class="field" data-field="notes">
+                  <label for="book-notes">Special requests (optional)</label>
+                  <textarea id="book-notes" name="notes" maxlength="500" placeholder="A quiet table, a high-chair, a celebration..."></textarea>
+                </div>
+
+                <div class="checkbox-row" data-field="consent">
+                  <input id="book-consent" name="consent" type="checkbox" required>
+                  <label for="book-consent">I agree to be contacted about my booking, including reminders and follow-ups.</label>
+                </div>
+
+                <button class="btn-pill" type="submit" style="width:100%">Confirm Reservation</button>
+              </form>
+
+              <div class="booking-success" id="booking-success" role="status" tabindex="-1">
+                <h3>Your table is reserved.</h3>
+                <p>Thanks <span class="booking-success__name"></span>. We've held a table for <span class="booking-success__party"></span> on <span class="booking-success__date"></span> at <span class="booking-success__time"></span>. A confirmation will arrive shortly.</p>
+              </div>
+            </div>
+          </div>
+
+          <div class="booking-info" data-reveal-stagger>
+            <div class="info-tile" data-reveal-child data-reveal="up">
+              <span class="material-symbols-outlined" aria-hidden="true">groups</span>
+              <h4>Group Bookings</h4>
+              <p>Tables of seven or more can be arranged with a dedicated set menu. Email reservations to discuss.</p>
+            </div>
+            <div class="info-tile" data-reveal-child data-reveal="up">
+              <span class="material-symbols-outlined" aria-hidden="true">restaurant</span>
+              <h4>Private Dining</h4>
+              <p>Our back room seats twelve. Quiet, candle-lit, with a tasting-menu option. Limited dates.</p>
+            </div>
+            <div class="info-tile" data-reveal-child data-reveal="up">
+              <span class="material-symbols-outlined" aria-hidden="true">restaurant_menu</span>
+              <h4>Dietary Notice</h4>
+              <p>Coeliac, vegan, dairy-free — the kitchen accommodates with no compromise. Note requirements above.</p>
+            </div>
+            <div class="info-tile" data-reveal-child data-reveal="up" style="background:var(--color-accent);color:var(--color-bg);border-color:transparent">
+              <span class="material-symbols-outlined" aria-hidden="true" style="color:var(--color-bg)">call</span>
+              <h4 style="color:var(--color-bg)">Or ring us</h4>
+              <p style="color:rgba(235,233,230,0.85)"><a href="tel:+61493514593" class="link-underline" style="color:var(--color-bg)">0493 514 593</a><br>Tuesday — Sunday, from 4:00 PM.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ ORDER ONLINE ============ -->
+    <section class="section" id="order" aria-labelledby="order-title" style="background:var(--color-surface-2);">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">Order Online</span>
+          <h2 id="order-title">Provisions, <em>house-made</em> — to take home.</h2>
+          <p>Sauces, dessert, ramen kits. Made in our kitchen. Pickup from Furzer Street, packed cold and ready.</p>
+        </header>
+        <div class="product-grid" id="product-grid" data-reveal-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ TESTIMONIALS ============ -->
+    <section class="section" id="press" aria-labelledby="press-title">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">In Their Words</span>
+          <h2 id="press-title">What guests are <em>saying</em>.</h2>
+        </header>
+        <div class="testimonials" id="testimonials" data-reveal-stagger></div>
+      </div>
+    </section>
+
+    <!-- ============ ABOUT ============ -->
+    <section class="section" id="about" aria-labelledby="about-title">
+      <div class="container">
+        <div class="about-grid">
+          <div class="about-copy" data-reveal="up">
+            <span class="eyebrow">About</span>
+            <h2 id="about-title">A small kitchen, a <em>specific</em> idea.</h2>
+            <p>Dada opened in Phillip with a simple aim — to cook modern Asian food with the same care a pastry chef brings to a tart. House-aged kimchi, twenty-four-hour broths, ceremonial-grade matcha, a dessert program treated as seriously as the savoury side.</p>
+            <p>We source locally where it makes sense, and from further afield where the difference is real. Most of what arrives on the plate was made the same day, from raw ingredients, by people who care about it.</p>
+            <p style="margin-top:32px"><a href="#book" class="btn-pill">Book a Visit</a></p>
+          </div>
+          <div class="about-media media-zoom" data-reveal="scale">
+            <img data-asset-role="about" data-img-key="about"
+              src="https://lh3.googleusercontent.com/aida-public/AB6AXuC2P-N2-z9jhCBdtmqf8FfYzRk_PuwwYqcKjyZP3HoO_OEsbBu8JJSgGdvX_-z8XSMhEFOlMNm9wEhRpQy_AjC9TUYUQvtUmKHoIxMx5VENPxlDwHpYsfYZHvy-9fS9Zk7DJTOEW2NTOyA6gKZJ-x8sjvyG_2EX0nOSL7iizf2v8q9NDHcWlt1PGn8b6FY7XHTQzeOMnTfFKKr0qvYr2Qm2pi9rXM7KNTQrPMjJD8MwGq50fqfgKE-zsXbswWqV98m-4PQg9aP7N1Hp"
+              alt="Inside the Dada kitchen, plating in dramatic light" loading="lazy" decoding="async">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ============ CONTACT ============ -->
+    <section class="section" id="contact" aria-labelledby="contact-title" style="padding-bottom:0">
+      <div class="container">
+        <header class="section-head" data-reveal="up">
+          <span class="eyebrow">Visit</span>
+          <h2 id="contact-title">Find <em>us</em>.</h2>
+        </header>
+        <div class="contact-grid" data-reveal-stagger>
+          <div class="contact-tile" data-reveal-child data-reveal="up">
+            <h4>Address</h4>
+            <p>G4 / 12 Furzer Street<br>Phillip ACT 2606<br>Australia</p>
+            <p style="margin-top:8px"><a href="https://maps.google.com/?q=G4+12+Furzer+Street+Phillip+ACT+2606" class="link-underline" target="_blank" rel="noopener">Get directions</a></p>
+          </div>
+          <div class="contact-tile" data-reveal-child data-reveal="up">
+            <h4>Contact</h4>
+            <p><a href="tel:+61493514593" class="link-underline">0493 514 593</a></p>
+            <p><a href="mailto:hello@dadarestaurant.com.au" class="link-underline">hello@dadarestaurant.com.au</a></p>
+          </div>
+          <div class="contact-tile" data-reveal-child data-reveal="up" style="grid-column:1/-1">
+            <h4>Hours</h4>
+            <ul style="list-style:none;padding:0;margin:8px 0 0;display:grid;grid-template-columns:1fr 1fr;gap:8px 24px;font-size:0.9375rem;">
+              <li><strong>Tue — Thu</strong> · 5:30 PM — 10:00 PM</li>
+              <li><strong>Fri — Sat</strong> · 5:30 PM — 11:00 PM</li>
+              <li><strong>Sunday</strong> · 5:30 PM — 9:30 PM</li>
+              <li><strong>Monday</strong> · Closed</li>
+            </ul>
+          </div>
+        </div>
+        <div class="contact-map" data-reveal="up">
+          <iframe
+            title="Map showing Dada Restaurant in Phillip ACT"
+            src="https://www.google.com/maps?q=G4+12+Furzer+Street+Phillip+ACT+2606&output=embed"
+            loading="lazy"
+            referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- ============ FOOTER ============ -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div data-reveal="up">
+          <div class="footer-brand">dada</div>
+          <p class="footer-tagline">Modern Asian-inspired dining and artisanal house-made treats. Phillip, Canberra.</p>
+        </div>
+        <div class="footer-col" data-reveal="up">
+          <h5>Visit</h5>
+          <ul>
+            <li><a href="#menu">Menu</a></li>
+            <li><a href="#book">Reservations</a></li>
+            <li><a href="#order">Order Online</a></li>
+            <li><a href="#about">About</a></li>
+          </ul>
+        </div>
+        <div class="footer-col" data-reveal="up">
+          <h5>Find</h5>
+          <ul>
+            <li>G4/12 Furzer Street</li>
+            <li>Phillip ACT 2606</li>
+            <li><a href="tel:+61493514593">0493 514 593</a></li>
+            <li><a href="mailto:hello@dadarestaurant.com.au">hello@dadarestaurant.com.au</a></li>
+          </ul>
+        </div>
+        <div class="newsletter" data-reveal="up">
+          <h5 style="font-family:var(--font-body);font-size:0.75rem;font-weight:700;letter-spacing:0.18em;text-transform:uppercase;color:rgba(235,233,230,0.7);margin-bottom:12px">Stay in touch</h5>
+          <p style="font-size:0.9375rem;color:rgba(235,233,230,0.85);max-width:32ch">Gourmet treats, new dishes, and quiet updates — once a month, no more.</p>
+          <form id="newsletter-form">
+            <input type="email" placeholder="your@email.com" aria-label="Email address" required>
+            <button type="submit">Sign Up</button>
+          </form>
+          <span class="newsletter__success">Thanks — you're on the list.</span>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <span>© <span data-year>2025</span> Dada Restaurant · ABN placeholder</span>
+        <div class="footer-socials">
+          <a href="https://instagram.com/" target="_blank" rel="noopener" aria-label="Instagram"><span class="material-symbols-outlined">photo_camera</span></a>
+          <a href="https://facebook.com/" target="_blank" rel="noopener" aria-label="Facebook"><span class="material-symbols-outlined">thumb_up</span></a>
+          <a href="https://maps.google.com/" target="_blank" rel="noopener" aria-label="Google Maps"><span class="material-symbols-outlined">map</span></a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ============ CART DRAWER ============ -->
+  <div class="cart-drawer" id="cart-drawer" aria-hidden="true">
+    <div class="cart-drawer__backdrop"></div>
+    <aside class="cart-drawer__panel" role="dialog" aria-modal="true" aria-labelledby="cart-title">
+      <div class="cart-drawer__header">
+        <span class="cart-drawer__title" id="cart-title">Your Order</span>
+        <button class="mobile-menu__close" aria-label="Close cart">
+          <span class="material-symbols-outlined">close</span>
+        </button>
+      </div>
+      <div class="cart-drawer__items" id="cart-items"></div>
+      <div class="cart-drawer__summary" id="cart-summary">
+        <div class="cart-totals">
+          <div class="cart-totals__row"><span>Subtotal</span><span data-sub>$0.00</span></div>
+          <div class="cart-totals__row"><span>GST (10%)</span><span data-tax>$0.00</span></div>
+          <div class="cart-totals__row cart-totals__row--grand"><span>Total</span><span data-total>$0.00</span></div>
+        </div>
+        <div class="field">
+          <label for="pickup-date">Pickup</label>
+          <select id="pickup-date"></select>
+        </div>
+        <div class="field">
+          <label for="order-notes">Order notes (optional)</label>
+          <input id="order-notes" type="text" placeholder="Allergies, pickup time...">
+        </div>
+        <button class="btn-pill cart-drawer__checkout" id="cart-checkout" type="button">Proceed to Checkout</button>
+      </div>
+    </aside>
+  </div>
+
+  <!-- ============ SCRIPTS ============ -->
+  <script src="assets/js/preloader.js"></script>
+  <script src="assets/js/config.js"></script>
+  <script src="assets/js/reveal.js"></script>
+  <script src="assets/js/parallax.js"></script>
+  <script src="assets/js/nav.js"></script>
+  <script src="assets/js/menu.js"></script>
+  <script src="assets/js/booking.js"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
