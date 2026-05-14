@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dada Restaurant - Menu</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;9..40,500&amp;family=Playfair+Display:wght@500&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#c6c6c6",
+                      "on-secondary-fixed-variant": "#474747",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#cbc5c5",
+                      "tertiary-fixed": "#e8e1e1",
+                      "on-primary-fixed": "#1b1c1a",
+                      "surface-white": "#ffffff",
+                      "tertiary-container": "#efe8e8",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fcf8f7",
+                      "secondary": "#5e5e5e",
+                      "primary-fixed-dim": "#c8c6c3",
+                      "primary-fixed": "#e4e2df",
+                      "on-surface": "#1c1b1b",
+                      "surface-bright": "#fcf8f7",
+                      "surface-variant": "#e5e2e1",
+                      "primary-container": "#ebe9e6",
+                      "secondary-container": "#e2e2e2",
+                      "surface-container-highest": "#e5e2e1",
+                      "surface-container": "#f1edec",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#494646",
+                      "surface-tint": "#5e5e5c",
+                      "secondary-fixed": "#e2e2e2",
+                      "inverse-surface": "#313030",
+                      "on-surface-variant": "#454743",
+                      "background": "#fcf8f7",
+                      "on-background": "#1c1b1b",
+                      "outline": "#767873",
+                      "surface-container-low": "#f7f3f2",
+                      "inverse-on-surface": "#f4f0ef",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#ebe7e6",
+                      "on-secondary-fixed": "#1b1b1b",
+                      "on-primary-fixed-variant": "#474745",
+                      "on-primary-container": "#696966",
+                      "primary": "#5e5e5c",
+                      "on-tertiary-container": "#6c6868",
+                      "inverse-primary": "#c8c6c3",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ddd9d8",
+                      "on-tertiary-fixed": "#1d1b1b",
+                      "accent-olive": "#4d4232",
+                      "outline-variant": "#c6c7c1",
+                      "tertiary": "#615d5e",
+                      "on-secondary-container": "#646464",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "stack-md": "16px",
+                      "section-gap": "80px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "DM Sans"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "button-text": [
+                              "DM Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "button-text": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+      </script>
+</head>
+<body class="bg-primary-container text-on-surface antialiased min-h-screen flex flex-col">
+<!-- TopNavBar -->
+<header class="bg-surface-container/95 dark:bg-surface-dim/95 backdrop-blur-md full-width top-0 sticky border-b border-outline-variant/30 z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<!-- Brand -->
+<a class="font-headline-sm text-headline-sm text-on-surface dark:text-on-surface lowercase tracking-tighter hover:text-accent-olive transition-colors duration-300" href="#">
+                dada
+            </a>
+<!-- Navigation Links (Web) -->
+<nav class="hidden md:flex space-x-8 items-center">
+<a class="text-on-surface font-bold border-b-2 border-on-surface pb-1 transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Menu</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Reservations</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Order Online</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">About</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Contact</a>
+</nav>
+<!-- Mobile Menu Icon (Placeholder) -->
+<button class="md:hidden text-on-surface hover:text-accent-olive transition-colors duration-300 p-2">
+<span class="material-symbols-outlined" style="font-variation-settings: 'FILL' 0;">menu</span>
+</button>
+</div>
+</header>
+<!-- Main Content Canvas -->
+<main class="flex-grow w-full max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap flex flex-col gap-section-gap">
+<!-- Header & Category Nav -->
+<section class="flex flex-col items-center text-center space-y-stack-lg">
+<h1 class="font-display-lg-mobile text-display-lg-mobile md:font-display-lg md:text-display-lg text-on-surface">Menu</h1>
+<nav class="flex flex-wrap justify-center gap-x-8 gap-y-4">
+<a class="font-headline-sm text-headline-sm text-on-surface border-b-2 border-on-surface pb-1" href="#">Small Plates</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors pb-1" href="#">Mains</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors pb-1" href="#">Desserts</a>
+<a class="font-headline-sm text-headline-sm text-on-surface-variant hover:text-on-surface transition-colors pb-1" href="#">Drinks</a>
+</nav>
+</section>
+<!-- Menu Grid -->
+<section class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Left Column: Menu Items -->
+<div class="col-span-1 md:col-span-7 flex flex-col gap-stack-lg">
+<!-- Item 1 -->
+<article class="bg-surface-white p-6 rounded-DEFAULT border border-transparent hover:border-outline-variant/50 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start">
+<img alt="Menu Item" class="w-full sm:w-32 sm:h-32 object-cover rounded-md flex-shrink-0" data-alt="A macro photograph of a delicate, artisanal small plate featuring a seared scallop resting on a bed of vibrant green puree. The lighting is moody and dramatic, highlighting the caramelization on the scallop and the smooth texture of the sauce. The overall aesthetic is minimalist, luxurious, and highly curated, fitting perfectly within a light mode, high-contrast culinary presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBrDNrxrI13moC2GIsS8dOXnZFgBubXby8fi9P7Sn2ClUpPUeab8-ceksqwr8fuiuRB9coaEaki1F2zbKc0poqzE0aly6PNVO_MEMXhenZe-wLV_5Txodp7Ock-YWqdR5GT4PRb3dPvD_BHZqd6rq12YyhKRGX40lVI6XjPodLBQU80aBYhMfD-7_i1SGZl9wQd6qlXf6_TFA-oZo91TNmmw7DhujpTE31_ZMV_GMaatItsC-8SnwZs5Sp8l4Hv4pKpEZR6orO1CT4"/>
+<div class="flex-grow space-y-stack-sm">
+<div class="flex justify-between items-baseline gap-4 border-b border-outline-variant/30 pb-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface m-0">Charred Edamame</h2>
+<span class="font-headline-sm text-headline-sm text-on-surface">$12</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Tossed in smoked sea salt, black garlic oil, and a hint of togarashi.</p>
+<div class="flex gap-2 pt-2">
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">V</span>
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">VG</span>
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">GF</span>
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">DF</span>
+</div>
+</div>
+</article>
+<!-- Item 2 -->
+<article class="bg-surface-white p-6 rounded-DEFAULT border border-transparent hover:border-outline-variant/50 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start">
+<img alt="Menu Item" class="w-full sm:w-32 sm:h-32 object-cover rounded-md flex-shrink-0" data-alt="Close-up shot of crispy, golden-brown tempura mushrooms arranged elegantly on a textured ceramic plate. A shallow depth of field blurs the background, emphasizing the delicate crunch of the batter. The scene is lit with a soft, directional light that creates subtle shadows, enhancing the organic warmth and artisanal minimalism of the dish." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDTJqI-Uat1uOxmRNo3AnFyrXOck5pUsbXHqcSCfQWsFnJOh-RSDglmbhZ_MsDW6bQ_Saq0gYwOU-ExIVhcGMDn_VYM0WPf8WW-ch8njLkJ5o_Pf2QjSCBV0oCyY7TQh9DyrbX_Qsb0gif88lGYRO12D-FyOYHCo7XDafJy79dBCJM6CINViKB8Wn7YCIjSKTDtRky6D5zMO7iQo-tignJhjaK4KCxDtgnkKXshtHcXTZU-XRn42d3gxzL7YVkTJfFbETbOutOBYJU"/>
+<div class="flex-grow space-y-stack-sm">
+<div class="flex justify-between items-baseline gap-4 border-b border-outline-variant/30 pb-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface m-0">Mushroom Tempura</h2>
+<span class="font-headline-sm text-headline-sm text-on-surface">$16</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Locally foraged wild mushrooms, lightly battered, served with yuzu ponzu.</p>
+<div class="flex gap-2 pt-2">
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">V</span>
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">DF</span>
+</div>
+</div>
+</article>
+<!-- Item 3 -->
+<article class="bg-surface-white p-6 rounded-DEFAULT border border-transparent hover:border-outline-variant/50 transition-all duration-300 flex flex-col sm:flex-row gap-6 items-start">
+<div class="flex-grow space-y-stack-sm">
+<div class="flex justify-between items-baseline gap-4 border-b border-outline-variant/30 pb-2">
+<h2 class="font-headline-sm text-headline-sm text-on-surface m-0">Wagyu Beef Tartare</h2>
+<span class="font-headline-sm text-headline-sm text-on-surface">$24</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant">Hand-cut wagyu, cured egg yolk, crispy shallots, on toasted brioche.</p>
+<div class="flex gap-2 pt-2">
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded-sm">DF</span>
+</div>
+</div>
+</article>
+</div>
+<!-- Right Column: Editorial Visual -->
+<div class="col-span-1 md:col-span-5 hidden md:block relative h-full min-h-[500px]">
+<div class="sticky top-24 w-full aspect-[3/4] rounded-lg overflow-hidden">
+<img alt="Editorial Food Shot" class="w-full h-full object-cover" data-alt="A highly detailed, cinematic macro photograph focusing on the glistening texture of a dark, rich sauce being poured over an unknown culinary creation. The lighting is intensely dramatic, creating deep blacks and bright, sharp highlights on the liquid's surface. The background is a soft, warm gray tone, reflecting an artisanal, gallery-like presentation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuA3n7UHF81fCboQJxnV4dbGyYqeUNhZLBnfn7EmI4aNybrzq6dp_VuOU5VSzv0AM2M1qr_lJxIMt6l5V_haCGQqhyCiQsxYUbkVf-jVTA0OMYMqmIlKsKUznqU63D_C6ZaYn5v6NFCF55pCEXobCXIZgPjfblzFpzDeo2PDWm6limSLavIlepLjGjcy9ly3eQuE_T4SRvbL_YIML_19Vi0VUyrDCrXbiwLwCgjyb04w92-9ABhVil-4mDbQUuKCUtOPh0pC2t1_uO4"/>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer -->
+<footer class="bg-accent-olive full-width">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-section-gap w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col space-y-stack-md">
+<span class="font-headline-sm text-headline-sm text-primary-fixed lowercase">dada</span>
+<p class="font-body-md text-body-md text-primary-fixed-dim">© 2024 Dada Restaurant. Crafted with focus.</p>
+</div>
+<div class="col-span-1 md:col-span-3 grid grid-cols-1 md:grid-cols-3 gap-stack-md">
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90 transition-opacity" href="#">Address: 123 Artisan Way</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90 transition-opacity" href="#">Phone: +1 234 567 890</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90 transition-opacity" href="#">Instagram</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90 transition-opacity" href="#">Newsletter Signup</a>
+</div>
+</div>
+</footer>
+</body></html>

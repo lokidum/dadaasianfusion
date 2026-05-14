@@ -1,0 +1,396 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Order Online - Dada Restaurant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com" rel="preconnect"/>
+<link crossorigin="" href="https://fonts.gstatic.com" rel="preconnect"/>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:opsz,wght@9..40,400;500&amp;family=Playfair+Display:wght@400;500;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+      tailwind.config = {
+        darkMode: "class",
+        theme: {
+          extend: {
+            "colors": {
+                    "on-tertiary": "#ffffff",
+                    "secondary-fixed-dim": "#c6c6c6",
+                    "on-secondary-fixed-variant": "#474747",
+                    "on-primary": "#ffffff",
+                    "tertiary-fixed-dim": "#cbc5c5",
+                    "tertiary-fixed": "#e8e1e1",
+                    "on-primary-fixed": "#1b1c1a",
+                    "surface-white": "#ffffff",
+                    "tertiary-container": "#efe8e8",
+                    "on-secondary": "#ffffff",
+                    "surface": "#fcf8f7",
+                    "secondary": "#5e5e5e",
+                    "primary-fixed-dim": "#c8c6c3",
+                    "primary-fixed": "#e4e2df",
+                    "on-surface": "#1c1b1b",
+                    "surface-bright": "#fcf8f7",
+                    "surface-variant": "#e5e2e1",
+                    "primary-container": "#ebe9e6",
+                    "secondary-container": "#e2e2e2",
+                    "surface-container-highest": "#e5e2e1",
+                    "surface-container": "#f1edec",
+                    "surface-container-lowest": "#ffffff",
+                    "on-tertiary-fixed-variant": "#494646",
+                    "surface-tint": "#5e5e5c",
+                    "secondary-fixed": "#e2e2e2",
+                    "inverse-surface": "#313030",
+                    "on-surface-variant": "#454743",
+                    "background": "#fcf8f7",
+                    "on-background": "#1c1b1b",
+                    "outline": "#767873",
+                    "surface-container-low": "#f7f3f2",
+                    "inverse-on-surface": "#f4f0ef",
+                    "error": "#ba1a1a",
+                    "surface-container-high": "#ebe7e6",
+                    "on-secondary-fixed": "#1b1b1b",
+                    "on-primary-fixed-variant": "#474745",
+                    "on-primary-container": "#696966",
+                    "primary": "#5e5e5c",
+                    "on-tertiary-container": "#6c6868",
+                    "inverse-primary": "#c8c6c3",
+                    "on-error": "#ffffff",
+                    "surface-dim": "#ddd9d8",
+                    "on-tertiary-fixed": "#1d1b1b",
+                    "accent-olive": "#4d4232",
+                    "outline-variant": "#c6c7c1",
+                    "tertiary": "#615d5e",
+                    "on-secondary-container": "#646464",
+                    "on-error-container": "#93000a",
+                    "error-container": "#ffdad6"
+            },
+            "borderRadius": {
+                    "DEFAULT": "1rem",
+                    "lg": "2rem",
+                    "xl": "3rem",
+                    "full": "9999px"
+            },
+            "spacing": {
+                    "stack-lg": "32px",
+                    "stack-md": "16px",
+                    "section-gap": "80px",
+                    "stack-sm": "8px",
+                    "margin-mobile": "16px",
+                    "container-max": "1280px",
+                    "gutter": "24px"
+            },
+            "fontFamily": {
+                    "label-md": [
+                            "DM Sans"
+                    ],
+                    "display-lg": [
+                            "Playfair Display"
+                    ],
+                    "headline-md": [
+                            "Playfair Display"
+                    ],
+                    "display-lg-mobile": [
+                            "Playfair Display"
+                    ],
+                    "body-lg": [
+                            "DM Sans"
+                    ],
+                    "body-md": [
+                            "DM Sans"
+                    ],
+                    "headline-sm": [
+                            "Playfair Display"
+                    ],
+                    "button-text": [
+                            "DM Sans"
+                    ]
+            },
+            "fontSize": {
+                    "label-md": [
+                            "14px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "letterSpacing": "0.05em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg": [
+                            "64px",
+                            {
+                                    "lineHeight": "1.1",
+                                    "letterSpacing": "-0.02em",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "headline-md": [
+                            "32px",
+                            {
+                                    "lineHeight": "1.3",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "display-lg-mobile": [
+                            "40px",
+                            {
+                                    "lineHeight": "1.2",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "body-lg": [
+                            "18px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "body-md": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.6",
+                                    "fontWeight": "400"
+                            }
+                    ],
+                    "headline-sm": [
+                            "24px",
+                            {
+                                    "lineHeight": "1.4",
+                                    "fontWeight": "500"
+                            }
+                    ],
+                    "button-text": [
+                            "16px",
+                            {
+                                    "lineHeight": "1.0",
+                                    "fontWeight": "500"
+                            }
+                    ]
+            }
+    },
+        },
+      }
+    </script>
+</head>
+<body class="bg-background text-on-background antialiased selection:bg-accent-olive selection:text-surface-white">
+<!-- TopNavBar -->
+<header class="bg-surface-container/95 dark:bg-surface-dim/95 backdrop-blur-md docked full-width top-0 sticky border-b border-outline-variant/30 flat no shadows z-50">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20">
+<div class="font-headline-sm text-headline-sm text-on-surface dark:text-on-surface lowercase tracking-tighter scale-100 active:scale-95 transition-transform cursor-pointer">
+                dada
+            </div>
+<!-- Desktop Nav -->
+<nav class="hidden md:flex items-center space-x-8">
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300" href="#">Menu</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300" href="#">Reservations</a>
+<a class="text-on-surface font-bold border-b-2 border-on-surface pb-1 hover:text-accent-olive transition-colors duration-300" href="#">Order Online</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300" href="#">About</a>
+<a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300" href="#">Contact</a>
+</nav>
+<div class="flex items-center space-x-4">
+<button class="relative hover:text-accent-olive transition-colors duration-300 hidden md:block">
+<span class="material-symbols-outlined" data-icon="shopping_cart">shopping_cart</span>
+<span class="absolute -top-2 -right-2 bg-accent-olive text-surface-white text-xs rounded-full h-5 w-5 flex items-center justify-center">2</span>
+</button>
+<button class="md:hidden hover:text-accent-olive transition-colors duration-300">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</div>
+</header>
+<main class="max-w-container-max mx-auto px-margin-mobile md:px-gutter py-section-gap">
+<div class="flex flex-col lg:flex-row gap-gutter">
+<!-- Main Content Area -->
+<div class="w-full lg:w-2/3">
+<header class="mb-12 text-center lg:text-left">
+<h1 class="font-display-lg-mobile md:font-display-lg text-display-lg-mobile md:text-display-lg text-on-surface mb-stack-md">Artisanal Provisions</h1>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">House-made treats, signature sauces, and takeaway kits crafted with the same focus and meticulous attention to detail as our dining experience. Available for collection or local delivery.</p>
+</header>
+<!-- Categories Nav -->
+<nav class="flex overflow-x-auto space-x-8 mb-12 border-b border-outline-variant/30 pb-4 scrollbar-hide">
+<button class="font-label-md text-label-md font-bold text-on-surface border-b-2 border-on-surface pb-1 whitespace-nowrap">All Provisions</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-accent-olive transition-colors whitespace-nowrap">Takeaway Kits</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-accent-olive transition-colors whitespace-nowrap">House-made Sauces</button>
+<button class="font-label-md text-label-md text-on-surface-variant hover:text-accent-olive transition-colors whitespace-nowrap">Signature Desserts</button>
+</nav>
+<!-- Product Grid -->
+<div class="grid grid-cols-1 md:grid-cols-2 gap-stack-lg">
+<!-- Product Card 1 -->
+<article class="bg-surface-white p-stack-md flex flex-col group border border-surface-container transition-transform duration-500 hover:-translate-y-2">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden mb-stack-md">
+<img alt="A moody, high-contrast close-up shot of a dark glass jar filled with deep, rich chili oil. The jar sits on a textured stone surface illuminated by dramatic, soft light that highlights the glossy, vibrant red of the oil and the intricate textures of the chili flakes settled at the bottom. The background is a soft, dark blur, emphasizing the artisanal, premium quality of the house-made sauce in a minimalist setting." class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A moody, high-contrast close-up shot of a dark glass jar filled with deep, rich chili oil. The jar sits on a textured stone surface illuminated by dramatic, soft light that highlights the glossy, vibrant red of the oil and the intricate textures of the chili flakes settled at the bottom. The background is a soft, dark blur, emphasizing the artisanal, premium quality of the house-made sauce in a minimalist setting." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCFy38B9Aj1aIRn1Sfo8n8hShqYz9ty0h_WE0wiXbwuIYaIlijjDeyqjxLGERI2MzYF9qAEvQgU3PrTd6paaxZHjulftnqBx_KPuJicmK1vJzg6zoSA4zN9vmdycX6tQm3VZg_uwCNzpnCwm6ZVxdRaOHbv7TIr2D9gWj5fSQW9VclMjwOSwfaZmzhxec3AKksikk3T2-01zvgcpRp3fIiTQsrEr37lVUDZAOMDpT19KVY7ZIQdo1KvoSn9hhFYHf6JpiuIQJn--o8"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Signature Chili Oil</h3>
+<span class="font-body-md text-body-md font-medium">$14</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Our house-blend of toasted spices, Szechuan peppercorns, and deeply infused oil. A staple for any pantry.</p>
+<div class="flex gap-2 mb-stack-md">
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">VG</span>
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">GF</span>
+</div>
+</div>
+<button class="w-full bg-on-surface text-surface-white font-button-text text-button-text py-3 rounded-full hover:bg-accent-olive transition-colors duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</article>
+<!-- Product Card 2 -->
+<article class="bg-surface-white p-stack-md flex flex-col group border border-surface-container transition-transform duration-500 hover:-translate-y-2">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden mb-stack-md">
+<img alt="An overhead view of an artisanal DIY ramen kit laid out on a pristine white ceramic platter. The image features fresh, delicate alkaline noodles, a small pouch of rich tonkotsu broth, perfectly sliced chashu pork belly with a caramelized edge, and vibrant green scallions. The lighting is cinematic and natural, casting soft shadows that highlight the textures of the raw ingredients against a minimalist, light-mode background, evoking a sense of culinary craft." class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="An overhead view of an artisanal DIY ramen kit laid out on a pristine white ceramic platter. The image features fresh, delicate alkaline noodles, a small pouch of rich tonkotsu broth, perfectly sliced chashu pork belly with a caramelized edge, and vibrant green scallions. The lighting is cinematic and natural, casting soft shadows that highlight the textures of the raw ingredients against a minimalist, light-mode background, evoking a sense of culinary craft." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCOwmkZ9OXgBw3wRepUNgmY00st-2d_7xGtgvBbyCS4aXFtx-UBAP1Lv8asORp_eYh14-0cTew_IiMpyaLOfhxfGsqfLunhmV9c1emO_R1dR8hqvDih_bMXlbi4jzGAd1QMy5Su-72sl2mrmXb-ofI2hYxtnoaIvdiOnePDjUpLyE_m9xYwMx-aQA3U_NnvwmMkj7nu5ZNp8MRnw2hB4F2j8q6i4Vb9HGjXbP-wyUJ20_onirIKsgLKwGwXhIuF9CY9Rji1Bumw0XA"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Tonkotsu Kit for Two</h3>
+<span class="font-body-md text-body-md font-medium">$38</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Everything needed to recreate our signature bowl at home. 24-hour broth, fresh noodles, chashu, and tare.</p>
+<div class="flex gap-2 mb-stack-md">
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">DF</span>
+</div>
+</div>
+<button class="w-full bg-on-surface text-surface-white font-button-text text-button-text py-3 rounded-full hover:bg-accent-olive transition-colors duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</article>
+<!-- Product Card 3 -->
+<article class="bg-surface-white p-stack-md flex flex-col group border border-surface-container transition-transform duration-500 hover:-translate-y-2">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden mb-stack-md">
+<img alt="A highly detailed macro shot of a delicate, layered matcha crepe cake resting on a matte black plate. The fine dusting of vivid green matcha powder on top contrasts sharply with the creamy white layers. The scene is lit with moody, directional side lighting that accentuates the delicate folds of the crepes and the rich textures of the cream. The overall aesthetic is elegant, minimal, and intensely focused on the dessert's artisanal quality." class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A highly detailed macro shot of a delicate, layered matcha crepe cake resting on a matte black plate. The fine dusting of vivid green matcha powder on top contrasts sharply with the creamy white layers. The scene is lit with moody, directional side lighting that accentuates the delicate folds of the crepes and the rich textures of the cream. The overall aesthetic is elegant, minimal, and intensely focused on the dessert's artisanal quality." src="https://lh3.googleusercontent.com/aida-public/AB6AXuD6xfCgXF8mttIvd_H-vShem6_AXxFm-12slpLyrNz4B7EqLnV005jUoS39Nv7W-Gloq__JvGYf23CCtbX61a5cW3_JSX_z28HrmgIMgFCN88obMKDQpiKk7mMwKMJpnpXaVlr076RVlhJQjo4HR4FpeDs-rQXfHrkllSSCtrocMfwrgWqDfc1cIFkQpeF-6oaLqis2zoVMjT38D4GUzjxe1ZsEZrCQzTKtFoJaquVLXuTIgcKAYUzmKA7B8uJwYvEHI0akBo1YJtc"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Matcha Mille Crêpe</h3>
+<span class="font-body-md text-body-md font-medium">$45</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">A whole 6-inch cake featuring twenty delicate layers of hand-poured crêpes separated by light matcha pastry cream.</p>
+<div class="flex gap-2 mb-stack-md">
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">V</span>
+</div>
+</div>
+<button class="w-full bg-on-surface text-surface-white font-button-text text-button-text py-3 rounded-full hover:bg-accent-olive transition-colors duration-300">
+                                Add to Cart
+                            </button>
+</div>
+</article>
+<!-- Product Card 4 -->
+<article class="bg-surface-white p-stack-md flex flex-col group border border-surface-container transition-transform duration-500 hover:-translate-y-2">
+<div class="relative w-full aspect-[4/3] bg-surface-container overflow-hidden mb-stack-md">
+<img alt="A cinematic, high-contrast image of a small, rustic ceramic bowl containing a thick, dark soy glaze. A wooden spoon rests inside, with a glossy drop of the glaze caught mid-drip. The background is a soft, muted grey, allowing the rich, deep umami tones of the sauce to stand out. The lighting emphasizes the sticky, viscous texture of the glaze, conveying a sense of slow-cooked artisanal preparation." class="object-cover w-full h-full transition-transform duration-700 group-hover:scale-105" data-alt="A cinematic, high-contrast image of a small, rustic ceramic bowl containing a thick, dark soy glaze. A wooden spoon rests inside, with a glossy drop of the glaze caught mid-drip. The background is a soft, muted grey, allowing the rich, deep umami tones of the sauce to stand out. The lighting emphasizes the sticky, viscous texture of the glaze, conveying a sense of slow-cooked artisanal preparation." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBbImumMFzQDWmCFX96COYbzqM44S7zdkkq7RkdIJnDE_uVTJH37Ur-litgSU2Myukn0YeytIa0hGdENkISNex9uQ4pCnLPlx1xs_0e9PFNmMRe1sZB-TqUpd1Gbvm5cOvxNJB58zRdlxJ_-9kHWhdwLi2HnpziNPhGwB96d43tHLktoYMjlTTV_bdftsXPd6DCLuJ7tnq-ULiaT_bf4KfSTRoqFuFcrmgvvLhobPA7ad3DIs2i8t4qrr7tF4sz48NHySXupLUm-w0"/>
+</div>
+<div class="flex-grow flex flex-col justify-between">
+<div>
+<div class="flex justify-between items-start mb-stack-sm">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Aged Soy Glaze</h3>
+<span class="font-body-md text-body-md font-medium">$16</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant mb-stack-md">Reduced slowly over 48 hours with aromatics. Perfect for glazing proteins or finishing roasted vegetables.</p>
+<div class="flex gap-2 mb-stack-md">
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">VG</span>
+<span class="font-label-md text-label-md text-accent-olive bg-surface-container px-2 py-1">DF</span>
+</div>
+</div>
+<button class="w-full bg-transparent border border-on-surface text-on-surface font-button-text text-button-text py-3 rounded-full hover:bg-primary-container transition-colors duration-300">
+                                Out of Stock
+                            </button>
+</div>
+</article>
+</div>
+</div>
+<!-- Sidebar Checkout -->
+<aside class="w-full lg:w-1/3 mt-12 lg:mt-0">
+<div class="bg-surface-white p-stack-lg border border-on-surface sticky top-32">
+<h2 class="font-headline-md text-headline-md text-on-surface border-b border-outline-variant/30 pb-4 mb-6">Your Order</h2>
+<!-- Cart Items -->
+<ul class="space-y-6 mb-8">
+<li class="flex justify-between items-start">
+<div class="flex gap-4">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0">
+<img alt="Chili Oil" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrOZ2--b197nuZ4CcV0P0MQpyjkO_4AVCyh4g2BZxY_-Vq6dFmatL5WdwRv_MIhBuP92rAGCi_YhXG4V5xEktmB_XePR9lsuiaRJk8TAYHPwz0EICCJ9DR_gty9i_uo8HrpRFM3uerGG9SkHQ0j3JIzPsboMj7kMsSeD5DG1n2xNvzkLfnZb-NKMo3Bxvpye6UiJbZ5ykPH_5LNmN9Z40q3H1Sn7zsGhfxSsEISif22OJNKSwHduachGyQsxhS1nAk_qXMKEL8n_A"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Signature Chili Oil</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Qty: 1</p>
+<button class="font-label-md text-label-md text-accent-olive hover:text-on-surface transition-colors mt-1">Remove</button>
+</div>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">$14</span>
+</li>
+<li class="flex justify-between items-start">
+<div class="flex gap-4">
+<div class="w-16 h-16 bg-surface-container flex-shrink-0">
+<img alt="Ramen Kit" class="w-full h-full object-cover" src="https://lh3.googleusercontent.com/aida-public/AB6AXuA_dvKriJbJsI7rUm3eMObmgp5ZqKAH-F7rr16zmCHGFP3YEwXkobsir9o1Cg2xs329mzCOPhkSznny9BvaWBMCeawMw0x6bPAS0l7uZqyB9wcPv76Aa_kuT66C_RH9Rvgsq_UtbdPZ6v_qqa6tISEXbFK2ur9I1jvLNjaU7d42m_-EePmqdZeKeEdl0ved4_xcRsedciSg3_JU-vB4EVA5wbfHTIGh8RXmLxZcRXK6fIQgtPfrMA9gBWwbfUgfHPzAE1o9mE2TWl4"/>
+</div>
+<div>
+<h4 class="font-label-md text-label-md font-bold text-on-surface">Tonkotsu Kit for Two</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm">Qty: 1</p>
+<button class="font-label-md text-label-md text-accent-olive hover:text-on-surface transition-colors mt-1">Remove</button>
+</div>
+</div>
+<span class="font-body-md text-body-md text-on-surface font-medium">$38</span>
+</li>
+</ul>
+<!-- Order Summary -->
+<div class="border-t border-outline-variant/30 pt-6 space-y-4 mb-8">
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Subtotal</span>
+<span>$52.00</span>
+</div>
+<div class="flex justify-between font-body-md text-body-md text-on-surface-variant">
+<span>Local Tax</span>
+<span>$4.68</span>
+</div>
+<div class="flex justify-between font-headline-sm text-headline-sm text-on-surface pt-4 border-t border-outline-variant/30">
+<span>Total</span>
+<span>$56.68</span>
+</div>
+</div>
+<!-- Checkout Form Inputs -->
+<form class="space-y-4 mb-8">
+<div>
+<label class="sr-only" for="pickup_date">Pickup Date</label>
+<select class="w-full bg-transparent border-0 border-b border-on-surface font-body-md text-body-md text-on-surface focus:ring-0 focus:border-accent-olive py-2 px-0" id="pickup_date">
+<option>Today - Earliest 5:00 PM</option>
+<option>Tomorrow - 5:00 PM</option>
+<option>Tomorrow - 6:00 PM</option>
+</select>
+</div>
+<div>
+<label class="sr-only" for="notes">Order Notes</label>
+<input class="w-full bg-transparent border-0 border-b border-on-surface font-body-md text-body-md text-on-surface focus:ring-0 focus:border-accent-olive py-2 px-0 placeholder-on-surface-variant" id="notes" placeholder="Special instructions (optional)" type="text"/>
+</div>
+</form>
+<button class="w-full bg-on-surface text-surface-white font-button-text text-button-text py-4 rounded-full hover:bg-accent-olive transition-colors duration-300">
+                        Proceed to Checkout
+                    </button>
+<p class="font-label-md text-label-md text-on-surface-variant text-center mt-4 opacity-70">Payment processed securely.</p>
+</div>
+</aside>
+</div>
+</main>
+<!-- Footer -->
+<footer class="bg-accent-olive text-primary-fixed font-body-md text-body-md full-width none flat no shadows grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-section-gap w-full opacity-100 hover:opacity-90 transition-opacity">
+<div class="col-span-1 md:col-span-1">
+<span class="font-headline-sm text-headline-sm text-primary-fixed lowercase">dada</span>
+</div>
+<div class="col-span-1">
+<p class="text-primary-fixed-dim">Address: 123 Artisan Way</p>
+</div>
+<div class="col-span-1">
+<p class="text-primary-fixed-dim">Phone: +1 234 567 890</p>
+</div>
+<div class="col-span-1 flex flex-col space-y-2">
+<a class="text-primary-fixed-dim hover:text-surface-white transition-colors duration-200" href="#">Instagram</a>
+<a class="text-primary-fixed-dim hover:text-surface-white transition-colors duration-200" href="#">Newsletter Signup</a>
+</div>
+<div class="col-span-1 md:col-span-4 mt-8 pt-8 border-t border-primary-fixed-dim/30">
+<p class="text-primary-fixed-dim text-sm">© 2024 Dada Restaurant. Crafted with focus.</p>
+</div>
+</footer>
+</body></html>

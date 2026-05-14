@@ -1,0 +1,321 @@
+<!DOCTYPE html>
+
+<html class="light" lang="en"><head>
+<meta charset="utf-8"/>
+<meta content="width=device-width, initial-scale=1.0" name="viewport"/>
+<title>Dada Restaurant</title>
+<script src="https://cdn.tailwindcss.com?plugins=forms,container-queries"></script>
+<link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;700&amp;family=Playfair+Display:wght@400;500;600;700&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<link href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:wght,FILL@100..700,0..1&amp;display=swap" rel="stylesheet"/>
+<script id="tailwind-config">
+        tailwind.config = {
+          darkMode: "class",
+          theme: {
+            extend: {
+              "colors": {
+                      "on-tertiary": "#ffffff",
+                      "secondary-fixed-dim": "#c6c6c6",
+                      "on-secondary-fixed-variant": "#474747",
+                      "on-primary": "#ffffff",
+                      "tertiary-fixed-dim": "#cbc5c5",
+                      "tertiary-fixed": "#e8e1e1",
+                      "on-primary-fixed": "#1b1c1a",
+                      "surface-white": "#ffffff",
+                      "tertiary-container": "#efe8e8",
+                      "on-secondary": "#ffffff",
+                      "surface": "#fcf8f7",
+                      "secondary": "#5e5e5e",
+                      "primary-fixed-dim": "#c8c6c3",
+                      "primary-fixed": "#e4e2df",
+                      "on-surface": "#1c1b1b",
+                      "surface-bright": "#fcf8f7",
+                      "surface-variant": "#e5e2e1",
+                      "primary-container": "#ebe9e6",
+                      "secondary-container": "#e2e2e2",
+                      "surface-container-highest": "#e5e2e1",
+                      "surface-container": "#f1edec",
+                      "surface-container-lowest": "#ffffff",
+                      "on-tertiary-fixed-variant": "#494646",
+                      "surface-tint": "#5e5e5c",
+                      "secondary-fixed": "#e2e2e2",
+                      "inverse-surface": "#313030",
+                      "on-surface-variant": "#454743",
+                      "background": "#fcf8f7",
+                      "on-background": "#1c1b1b",
+                      "outline": "#767873",
+                      "surface-container-low": "#f7f3f2",
+                      "inverse-on-surface": "#f4f0ef",
+                      "error": "#ba1a1a",
+                      "surface-container-high": "#ebe7e6",
+                      "on-secondary-fixed": "#1b1b1b",
+                      "on-primary-fixed-variant": "#474745",
+                      "on-primary-container": "#696966",
+                      "primary": "#5e5e5c",
+                      "on-tertiary-container": "#6c6868",
+                      "inverse-primary": "#c8c6c3",
+                      "on-error": "#ffffff",
+                      "surface-dim": "#ddd9d8",
+                      "on-tertiary-fixed": "#1d1b1b",
+                      "accent-olive": "#4d4232",
+                      "outline-variant": "#c6c7c1",
+                      "tertiary": "#615d5e",
+                      "on-secondary-container": "#646464",
+                      "on-error-container": "#93000a",
+                      "error-container": "#ffdad6"
+              },
+              "borderRadius": {
+                      "DEFAULT": "1rem",
+                      "lg": "2rem",
+                      "xl": "3rem",
+                      "full": "9999px"
+              },
+              "spacing": {
+                      "stack-lg": "32px",
+                      "stack-md": "16px",
+                      "section-gap": "80px",
+                      "stack-sm": "8px",
+                      "margin-mobile": "16px",
+                      "container-max": "1280px",
+                      "gutter": "24px"
+              },
+              "fontFamily": {
+                      "label-md": [
+                              "DM Sans"
+                      ],
+                      "display-lg": [
+                              "Playfair Display"
+                      ],
+                      "headline-md": [
+                              "Playfair Display"
+                      ],
+                      "display-lg-mobile": [
+                              "Playfair Display"
+                      ],
+                      "body-lg": [
+                              "DM Sans"
+                      ],
+                      "body-md": [
+                              "DM Sans"
+                      ],
+                      "headline-sm": [
+                              "Playfair Display"
+                      ],
+                      "button-text": [
+                              "DM Sans"
+                      ]
+              },
+              "fontSize": {
+                      "label-md": [
+                              "14px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "letterSpacing": "0.05em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg": [
+                              "64px",
+                              {
+                                      "lineHeight": "1.1",
+                                      "letterSpacing": "-0.02em",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "headline-md": [
+                              "32px",
+                              {
+                                      "lineHeight": "1.3",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "display-lg-mobile": [
+                              "40px",
+                              {
+                                      "lineHeight": "1.2",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "body-lg": [
+                              "18px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "body-md": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.6",
+                                      "fontWeight": "400"
+                              }
+                      ],
+                      "headline-sm": [
+                              "24px",
+                              {
+                                      "lineHeight": "1.4",
+                                      "fontWeight": "500"
+                              }
+                      ],
+                      "button-text": [
+                              "16px",
+                              {
+                                      "lineHeight": "1.0",
+                                      "fontWeight": "500"
+                              }
+                      ]
+              }
+      },
+          },
+        }
+    </script>
+<style>
+        .material-symbols-outlined {
+            font-variation-settings: 'FILL' 0, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+        .material-symbols-outlined[data-weight="fill"] {
+            font-variation-settings: 'FILL' 1, 'wght' 400, 'GRAD' 0, 'opsz' 24;
+        }
+    </style>
+</head>
+<body class="bg-primary-container text-on-surface font-body-md antialiased min-h-screen flex flex-col">
+<!-- TopNavBar Component -->
+<nav class="bg-surface-container/95 dark:bg-surface-dim/95 backdrop-blur-md w-full top-0 sticky z-50 border-b border-outline-variant/30">
+<div class="flex justify-between items-center w-full px-margin-mobile md:px-gutter max-w-container-max mx-auto h-20 z-50">
+<div class="font-headline-sm text-headline-sm text-on-surface dark:text-on-surface lowercase tracking-tighter">
+                dada
+            </div>
+<!-- Desktop Nav -->
+<ul class="hidden md:flex items-center space-x-8">
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Menu</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Reservations</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Order Online</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">About</a></li>
+<li><a class="text-on-surface-variant font-label-md text-label-md hover:text-accent-olive transition-colors duration-300 scale-100 active:scale-95 transition-transform" href="#">Contact</a></li>
+</ul>
+<!-- Mobile Menu Icon (Placeholder for functionality) -->
+<button class="md:hidden text-on-surface">
+<span class="material-symbols-outlined" data-icon="menu">menu</span>
+</button>
+</div>
+</nav>
+<main class="flex-grow">
+<!-- Hero Section -->
+<section class="relative w-full h-[819px] min-h-[600px] flex items-center justify-center">
+<img alt="Korean Fried Chicken" class="absolute inset-0 w-full h-full object-cover" data-alt="Cinematic, high-contrast close-up shot of crispy Korean Fried Chicken glazed in a rich, dark red chili sauce. The lighting is dramatic and moody, highlighting the textured flakes of the batter and the glossy finish of the sauce. The scene sits against a minimal, dark background to make the food pop, embodying an artisanal, contemporary Asian dining aesthetic." src="https://lh3.googleusercontent.com/aida-public/AB6AXuCrCKCxp0zbrBw_N0hniKOfVXd3mkstMlKHB-uAtuLDQPw-A4vaPMFBb2vPcUeRmJe3IpttGVJHv1gp-ID7FkMSjV1jPGRWjnu0IVGjFhd7V5r3ockwOMgiLXBZjjcU7KPxjjl6feedntrNyBzSYr_uKrcPxzOJnXAQszvcDo72Ufd1sQbpS6681RgirSeTBRPyjfOG8tv1eJtYGUwQIlIN48CO5Ch_qxsE-nT9u8PfWjDeFW_c0ORRLQ0aFrcW2tf3n-eBGJeaOok"/>
+<div class="absolute inset-0 bg-black/40"></div>
+<div class="relative z-10 text-center px-margin-mobile max-w-3xl mx-auto flex flex-col items-center gap-stack-lg">
+<h1 class="font-display-lg text-display-lg-mobile md:text-display-lg text-surface-white drop-shadow-lg">Modern Asian-inspired dining and artisanal house-made treats.</h1>
+<div class="flex flex-col sm:flex-row gap-stack-md w-full sm:w-auto">
+<button class="bg-black text-white font-button-text text-button-text py-4 px-8 rounded-full hover:bg-accent-olive transition-colors duration-300 w-full sm:w-auto">
+                        Book a Table
+                    </button>
+<button class="bg-transparent text-white font-button-text text-button-text py-4 px-8 rounded-full border border-white hover:bg-surface-white hover:text-black transition-colors duration-300 w-full sm:w-auto backdrop-blur-sm">
+                        Order Online
+                    </button>
+</div>
+</div>
+</section>
+<!-- Intro Section -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto text-center flex flex-col items-center gap-stack-md">
+<h2 class="font-headline-md text-headline-md text-on-surface max-w-2xl">Culinary Innovation meets House-made Craftsmanship.</h2>
+<p class="font-body-lg text-body-lg text-on-surface-variant max-w-2xl">
+                At Dada, we believe in the art of the handmade. Every dish is a carefully considered composition, blending contemporary techniques with deep-rooted flavors. Our space is designed to be an intimate gallery where the food takes center stage.
+            </p>
+</section>
+<!-- Menu Highlights (Bento Grid) -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<div class="flex justify-between items-end mb-stack-lg border-b border-outline-variant/30 pb-4">
+<h3 class="font-headline-sm text-headline-sm text-on-surface">Menu Highlights</h3>
+<a class="font-label-md text-label-md text-on-surface hover:text-accent-olive transition-colors flex items-center gap-2" href="#">
+                    View Full Menu
+                    <span class="material-symbols-outlined text-sm" data-icon="arrow_forward">arrow_forward</span>
+</a>
+</div>
+<div class="grid grid-cols-1 md:grid-cols-12 gap-gutter">
+<!-- Large Feature -->
+<div class="md:col-span-8 bg-surface-white rounded-xl overflow-hidden shadow-sm flex flex-col h-[400px] group border border-outline-variant/20 hover:-translate-y-1 transition-transform duration-500">
+<div class="relative h-2/3 w-full overflow-hidden">
+<img alt="Wombok Pancake" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700" data-alt="A moody, high-end culinary shot of a Korean Wombok Pancake. The pancake is golden and crispy, garnished with delicate micro-herbs and a drizzle of dark soy glaze. The lighting is soft but directional, highlighting the textures on a clean white artisanal ceramic plate resting on a minimalist bone-colored table surface." src="https://lh3.googleusercontent.com/aida-public/AB6AXuDYCh6aQC9nL3gAm5tRNYBuStuV3Dl_LPV3PakZ_FRhcWdnglI8-VppE5IB9o4JnJbBMJppCQeVI9mCgwQsNAxwuWwHbdII-5Z1z4fVLsoKRtpazPWhEfgIgOZxL6dZRtvIJMQwa4Dpg7ckb6JreE8o71aVp_t6mdwaoxqQV35zB6XkI1FCcl95lDF8EGzXiO7Cue7vScNdCgq6nlcdPYuC9z5wkMMtoW016WNqSwKGVR5hZSODsDaGgtz_fPuLKoWizb9c2jvyaQA"/>
+</div>
+<div class="p-6 h-1/3 flex flex-col justify-between bg-surface-white">
+<div class="flex justify-between items-start">
+<h4 class="font-headline-sm text-headline-sm text-on-surface">Wombok Pancake</h4>
+<span class="font-label-md text-label-md text-accent-olive bg-primary-container px-2 py-1 rounded">V, VG</span>
+</div>
+<p class="font-body-md text-body-md text-on-surface-variant line-clamp-2">Crispy cabbage pancake with scallions and a house-made dipping sauce.</p>
+</div>
+</div>
+<!-- Small Card Top -->
+<div class="md:col-span-4 bg-surface-white rounded-xl overflow-hidden shadow-sm flex flex-col h-[190px] border border-outline-variant/20 hover:-translate-y-1 transition-transform duration-500">
+<div class="flex h-full">
+<div class="w-1/2 relative overflow-hidden">
+<img alt="Korean Fried Chicken" class="absolute inset-0 w-full h-full object-cover" data-alt="A close-up, textural shot of Korean Fried Chicken wings in a bright, modern setting. The wings are coated in a vibrant, sticky chili sauce, resting on a stark white plate. The focus is incredibly sharp on the glistening sauce, embodying a premium, editorial food photography style." src="https://lh3.googleusercontent.com/aida-public/AB6AXuBeli8rkWOFnejyrWAPMjYv4EmsRFJ9VWbEjYOuPMwihzWPVf8sEcb6JpDusq2xeI74sBAyBgwJui46AYn0-spo_MYT7jPlzrRlvEHk6dJYACEHwat-rGYZchtzR0wWNp2oCDBEh9S1cXK6kh61ZmTFMm2NBPalAOgKPoSkGLlWGN5JPIlACUD2KtnlpRKTapOjNtW4yNWvCBR_UDwmqSeXdMXiYq-cqVZitaA1xtFK1TM92ty-zxlNaxOGgHVvL-eQ3uHuYn_Paoo"/>
+</div>
+<div class="w-1/2 p-4 flex flex-col justify-center gap-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Korean Fried Chicken</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Signature chili glaze, crushed peanuts.</p>
+<span class="font-label-md text-label-md text-accent-olive text-xs">DF</span>
+</div>
+</div>
+</div>
+<!-- Small Card Bottom -->
+<div class="md:col-span-4 bg-surface-white rounded-xl overflow-hidden shadow-sm flex flex-col h-[190px] border border-outline-variant/20 hover:-translate-y-1 transition-transform duration-500 md:col-start-9 md:row-start-2">
+<div class="flex h-full">
+<div class="w-1/2 relative overflow-hidden">
+<img alt="Matcha Basque Cheesecake" class="absolute inset-0 w-full h-full object-cover" data-alt="An artisanal, dark and moody shot of a slice of Matcha Basque Cheesecake. The burnt top contrasts beautifully with the vivid green interior. It sits on a minimalist, textured ceramic plate against a bone-colored background, illuminated by soft, natural light to highlight the creamy texture." src="https://lh3.googleusercontent.com/aida-public/AB6AXuAFUPT9rmtMKwPoqKl3hsvAF_73Nfox3GlCy7uLmtU7kITVERUlaIcVlSS5rb9DEwA5ebTqDCGGno-xQC0DWzVIdOr-GZRHrLOZLE04cJUCwM44bcou3jVCrg9IORpCTxjW_rU-Ppe8qx8j0voFTkIy5vkOMd31eb_llf2_9BwV5wb_3LGSdRuiBal34OGL95qC1NqLROssh-Ho-p1joVnLGD-UnNn9VLCxiP44tAOnAhh6W0Timg-Apvbf0gTXzFYsVFa3hyt0JBU"/>
+</div>
+<div class="w-1/2 p-4 flex flex-col justify-center gap-2">
+<h4 class="font-label-md text-label-md text-on-surface font-bold">Matcha Cheesecake</h4>
+<p class="font-body-md text-body-md text-on-surface-variant text-sm line-clamp-2">Burnt basque style, earthy matcha.</p>
+<span class="font-label-md text-label-md text-accent-olive text-xs">GF, V</span>
+</div>
+</div>
+</div>
+</div>
+</section>
+<!-- Review Grid -->
+<section class="py-section-gap px-margin-mobile md:px-gutter max-w-container-max mx-auto">
+<h3 class="font-headline-md text-headline-md text-on-surface text-center mb-section-gap">Words from our guests</h3>
+<div class="grid grid-cols-1 md:grid-cols-3 gap-gutter">
+<!-- Review Card 1 -->
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant/20 shadow-sm flex flex-col gap-stack-md justify-between hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface">"The best dining experience in Canberra. The flavors are meticulously balanced, and the atmosphere is wonderfully serene."</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mt-4">— Sarah T.</p>
+</div>
+<!-- Review Card 2 -->
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant/20 shadow-sm flex flex-col gap-stack-md justify-between hover:shadow-md transition-shadow md:-translate-y-8">
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface">"Exceptional catering to dietary requirements without compromising an ounce of flavor or presentation. The Wombok Pancake is a revelation."</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mt-4">— James L.</p>
+</div>
+<!-- Review Card 3 -->
+<div class="bg-surface-white p-8 rounded-xl border border-outline-variant/20 shadow-sm flex flex-col gap-stack-md justify-between hover:shadow-md transition-shadow">
+<span class="material-symbols-outlined text-outline text-3xl" data-icon="format_quote">format_quote</span>
+<p class="font-body-lg text-body-lg text-on-surface">"An intimate space that feels like a quiet luxury. The house-made treats at the end of the meal are the perfect closing act."</p>
+<p class="font-label-md text-label-md text-on-surface-variant uppercase tracking-widest mt-4">— Emily R.</p>
+</div>
+</div>
+</section>
+</main>
+<!-- Footer Component -->
+<footer class="bg-accent-olive text-primary-fixed w-full">
+<div class="grid grid-cols-1 md:grid-cols-4 gap-stack-lg px-margin-mobile md:px-gutter py-section-gap w-full max-w-container-max mx-auto">
+<div class="col-span-1 md:col-span-1 flex flex-col gap-stack-md">
+<span class="font-headline-sm text-headline-sm text-primary-fixed lowercase">dada</span>
+<p class="font-body-md text-body-md text-primary-fixed-dim">© 2024 Dada Restaurant. Crafted with focus.</p>
+</div>
+<div class="col-span-1 flex flex-col gap-stack-sm">
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90" href="#">Address: 123 Artisan Way</a>
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90" href="#">Phone: +1 234 567 890</a>
+</div>
+<div class="col-span-1 flex flex-col gap-stack-sm">
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90" href="#">Instagram</a>
+</div>
+<div class="col-span-1 flex flex-col gap-stack-sm">
+<a class="font-body-md text-body-md text-primary-fixed-dim hover:text-surface-white transition-colors duration-200 opacity-100 hover:opacity-90" href="#">Newsletter Signup</a>
+</div>
+</div>
+</footer>
+</body></html>
