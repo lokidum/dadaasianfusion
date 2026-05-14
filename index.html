@@ -170,7 +170,7 @@
     </section>
 
     <!-- ============ MENU ============ -->
-    <section class="section" id="menu" aria-labelledby="menu-title" style="background:var(--color-surface-2);">
+    <section class="section" id="menu" aria-labelledby="menu-title" style="background:var(--color-cream);">
       <div class="container">
         <header class="section-head" data-reveal="up">
           <span class="eyebrow">The Menu</span>
@@ -183,12 +183,12 @@
             <div class="menu-tablist" id="menu-tablist" role="tablist" aria-label="Menu categories"></div>
             <div class="menu-items" id="menu-panel" role="tabpanel" tabindex="0"></div>
 
-            <div style="margin-top:32px;display:flex;gap:8px;flex-wrap:wrap;font-size:0.8125rem;color:var(--color-muted);" data-reveal="fade">
-              <span><strong style="color:var(--color-accent)">V</strong> Vegetarian</span>
-              <span style="margin-left:16px"><strong style="color:var(--color-accent)">VG</strong> Vegan</span>
-              <span style="margin-left:16px"><strong style="color:var(--color-accent)">GF</strong> Gluten-Free</span>
-              <span style="margin-left:16px"><strong style="color:var(--color-accent)">DF</strong> Dairy-Free</span>
-              <span style="margin-left:16px"><span style="display:inline-block;width:6px;height:6px;border-radius:50%;background:var(--color-accent);vertical-align:middle"></span> Signature</span>
+            <div class="dietary-key" data-reveal="fade">
+              <span><strong>V</strong> Vegetarian</span>
+              <span><strong>VG</strong> Vegan</span>
+              <span><strong>GF</strong> Gluten-Free</span>
+              <span><strong>DF</strong> Dairy-Free</span>
+              <span><span style="display:inline-block;width:7px;height:7px;border-radius:50%;background:var(--color-terracotta);vertical-align:middle;margin-right:4px"></span> Signature dish</span>
             </div>
           </div>
 
@@ -317,10 +317,10 @@
               <h4>Dietary Notice</h4>
               <p>Coeliac, vegan, dairy-free — the kitchen accommodates with no compromise. Note requirements above.</p>
             </div>
-            <div class="info-tile" data-reveal-child data-reveal="up" style="background:var(--color-accent);color:var(--color-bg);border-color:transparent">
-              <span class="material-symbols-outlined" aria-hidden="true" style="color:var(--color-bg)">call</span>
-              <h4 style="color:var(--color-bg)">Or ring us</h4>
-              <p style="color:rgba(235,233,230,0.85)"><a href="tel:+61493514593" class="link-underline" style="color:var(--color-bg)">0493 514 593</a><br>Tuesday — Sunday, from 4:00 PM.</p>
+            <div class="info-tile info-tile--olive" data-reveal-child data-reveal="up">
+              <span class="material-symbols-outlined" aria-hidden="true">call</span>
+              <h4>Or ring us</h4>
+              <p><a href="tel:+61493514593" class="link-underline">0493 514 593</a><br>Tuesday — Sunday, from 4:00 PM.</p>
             </div>
           </div>
         </div>
@@ -328,7 +328,7 @@
     </section>
 
     <!-- ============ ORDER ONLINE ============ -->
-    <section class="section" id="order" aria-labelledby="order-title" style="background:var(--color-surface-2);">
+    <section class="section" id="order" aria-labelledby="order-title" style="background:var(--color-cream);">
       <div class="container">
         <header class="section-head" data-reveal="up">
           <span class="eyebrow">Order Online</span>
@@ -404,6 +404,22 @@
             src="https://www.google.com/maps?q=G4+12+Furzer+Street+Phillip+ACT+2606&output=embed"
             loading="lazy"
             referrerpolicy="no-referrer-when-downgrade"></iframe>
+        </div>
+      </div>
+    </section>
+    <!-- ============ CTA BAND ============ -->
+    <section class="cta-band" aria-labelledby="cta-band-title">
+      <div class="container">
+        <div class="cta-band__inner">
+          <div data-reveal="up">
+            <span class="eyebrow" style="color:var(--color-terracotta)">Two ways in</span>
+            <h2 id="cta-band-title" style="margin-top:12px">Reserve a <em>table</em>, or take a piece of Dada home.</h2>
+            <p>Dine-in seating opens at 5:30 PM. Provisions packed and ready for pickup from Furzer Street.</p>
+          </div>
+          <div class="cta-band__actions" data-reveal="up">
+            <a href="#book" class="btn-pill">Book a Table</a>
+            <a href="#order" class="btn-pill btn-pill--ghost">Order Online</a>
+          </div>
         </div>
       </div>
     </section>

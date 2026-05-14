@@ -63,7 +63,7 @@
             <h3 class="menu-item__name">${item.name}${isSig ? '<span class="menu-item__signature" aria-label="Signature dish"></span>' : ''}</h3>
           </div>
           <p class="menu-item__desc">${item.desc}</p>
-          ${item.tags.length ? `<div class="menu-tags">${item.tags.map((t) => `<span class="menu-tag" title="${tagLabel(t)}">${t}</span>`).join("")}</div>` : ""}
+          ${item.tags.length ? `<div class="menu-tags">${item.tags.map((t) => `<span class="menu-tag${t === "S" ? " menu-tag--sig" : ""}" title="${tagLabel(t)}">${t}</span>`).join("")}</div>` : ""}
         </div>
         <div class="menu-item__price">$${item.price}</div>
       `;

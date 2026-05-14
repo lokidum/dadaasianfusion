@@ -69,7 +69,7 @@
         </div>
         <div class="product__body">
           <h3 class="product__name">${p.name}</h3>
-          ${p.tags.length ? `<div class="menu-tags">${p.tags.map((t) => `<span class="menu-tag">${t}</span>`).join("")}</div>` : ""}
+          ${p.tags.length ? `<div class="menu-tags">${p.tags.map((t) => `<span class="menu-tag${t === "S" ? " menu-tag--sig" : ""}">${t}</span>`).join("")}</div>` : ""}
           <p class="product__desc">${p.desc}</p>
           <div class="product__row">
             <span class="product__price">$${p.price}</span>

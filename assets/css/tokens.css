@@ -1,24 +1,43 @@
 :root {
-  --color-bg: #ebe9e6;
-  --color-surface: #ffffff;
-  --color-surface-2: #f7f3f2;
+  /* === Surface tones === */
+  --color-bg: #ebe9e6;          /* base bone */
+  --color-cream: #f1e9dc;       /* warm cream — alt section bg */
+  --color-surface: #ffffff;     /* card surface */
+  --color-surface-2: #f7f3f2;   /* soft alt surface */
+
+  /* === Text === */
   --color-text: #000000;
   --color-text-soft: #1c1b1b;
   --color-muted: #5e5e5c;
+  --color-on-olive: #ebe9e6;
   --color-line: rgba(0, 0, 0, 0.08);
+  --color-line-strong: rgba(77, 66, 50, 0.18);
+
+  /* === Olive (footer / quiet accent) === */
   --color-accent: #4d4232;
   --color-accent-soft: rgba(77, 66, 50, 0.12);
+  --color-accent-line: rgba(77, 66, 50, 0.28);
+  --color-olive-light: #6b5d49;
+  --color-olive-deep: #322a1e;
+
+  /* === Terracotta (bold accent — CTAs, signatures, energy) === */
+  --color-terracotta: #b85c3a;
+  --color-terracotta-soft: rgba(184, 92, 58, 0.12);
+  --color-terracotta-deep: #8f4225;
+
+  /* === System === */
   --color-error: #ba1a1a;
   --color-success: #2e6f40;
 
+  /* === Type === */
   --font-display: "Fraunces", Georgia, "Times New Roman", serif;
   --font-body: "PT Sans", system-ui, -apple-system, "Segoe UI", Roboto, sans-serif;
 
-  --fs-hero: clamp(2.75rem, 6vw, 5.5rem);
-  --fs-h1: clamp(2.25rem, 4.5vw, 3.5rem);
-  --fs-h2: clamp(1.75rem, 3vw, 2.5rem);
-  --fs-h3: 1.5rem;
-  --fs-body: 1rem;
+  --fs-hero: clamp(2.5rem, 5.2vw, 5rem);
+  --fs-h1: clamp(2rem, 3.6vw, 3.25rem);
+  --fs-h2: clamp(1.5rem, 2.4vw, 2.125rem);
+  --fs-h3: clamp(1.25rem, 1.6vw, 1.5rem);
+  --fs-body: clamp(0.9375rem, 1vw, 1rem);
   --fs-small: 0.8125rem;
   --fs-micro: 0.6875rem;
 
@@ -26,6 +45,7 @@
   --tracking-wide: 0.18em;
   --tracking-display: -0.01em;
 
+  /* === Spacing === */
   --space-1: 4px;
   --space-2: 8px;
   --space-3: 16px;
@@ -37,14 +57,16 @@
   --space-9: 128px;
 
   --radius-sm: 8px;
-  --radius-md: 16px;
-  --radius-lg: 32px;
+  --radius-md: 14px;
+  --radius-lg: 24px;
   --radius-pill: 9999px;
 
-  --container-max: 1280px;
-  --nav-height: 72px;
-  --section-gap: clamp(72px, 9vw, 128px);
+  --container-max: 1440px;
+  --container-narrow: 1080px;
+  --nav-height: 68px;
+  --section-gap: clamp(56px, 7vw, 112px);
 
+  /* === Motion === */
   --ease-emphasized: cubic-bezier(0.22, 1, 0.36, 1);
   --ease-standard: cubic-bezier(0.4, 0, 0.2, 1);
   --ease-in-out: cubic-bezier(0.65, 0, 0.35, 1);
@@ -55,11 +77,20 @@
   --dur-reveal: 700ms;
   --dur-zoom: 900ms;
 
-  --shadow-card: 0 18px 40px -20px rgba(0, 0, 0, 0.25);
-  --shadow-nav: 0 1px 20px -10px rgba(0, 0, 0, 0.18);
+  /* === Shadows === */
+  --shadow-card: 0 18px 40px -22px rgba(50, 42, 30, 0.32);
+  --shadow-card-strong: 0 22px 50px -18px rgba(50, 42, 30, 0.45);
+  --shadow-nav: 0 1px 24px -10px rgba(50, 42, 30, 0.22);
   --shadow-drawer: -20px 0 60px -20px rgba(0, 0, 0, 0.35);
 
   --z-nav: 50;
   --z-drawer: 80;
   --z-preloader: 9999;
+}
+
+@media (min-width: 1600px) {
+  :root {
+    --nav-height: 76px;
+    --container-max: 1520px;
+  }
 }
